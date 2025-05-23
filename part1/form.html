@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <title>form 태그 학습</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .a11y-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: polygon(0 0, 0 0, 0 0); }
+  </style>
+</head>
+<body>
+
+  <div tabindex="0" role="button">회원가입</div>
+  
+  <!-- <button type="button">회원가입</button> -->
+
+  <hr />
+
+  <form>
+    <label for="idField">아이디:</label>
+    <input type="text" id="idField" required/>
+
+    <label for="pwField">비밀번호:</label>
+    <input type="password" id="pwField"/>
+
+    <hr />
+
+    <label for="progress">진행률:</label>
+    <input type="range" id="progress" />
+    <output>50%</output>
+
+    <hr />
+
+    <div>
+      <label for="checkbox">동의합니다.</label>
+      <input type="checkbox" id="checkbox" />
+    </div>
+
+    <hr />
+
+    <input type="email" />
+    <input type="color" />
+    <input type="file" multiple/>
+
+    <hr />
+
+    <fieldset>
+      <legend>성별</legend>
+      
+      <div tabindex="0" class="a11y-hidden" aria-label="성별 선택창">성별에 대한 선택창입니다.</div>
+      
+      <label for="male">남성</label>
+      <input type="radio" name="gender" id="male"/>
+
+      <label for="female">여성</label>
+      <input type="radio" name="gender" id="female"/>
+
+    </fieldset>
+
+    <hr />
+    <select name="" id="">
+      <option value="">김치찌개</option>
+      <option value="">부추삼겹살</option>
+      <option value="">김밥</option>
+    </select>
+
+    <hr />
+    <!-- <input type="button" value="로그인" /> -->
+    <button type="submit">로그인</button>
+  </form>
+
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+

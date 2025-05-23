@@ -1,0 +1,43 @@
+
+
+p {
+  background-color: hotpink;
+  width: 100px;
+  height: 100px;
+} 
+
+#box{
+  background-color: dodgerblue;
+}
+
+.box{
+  background-color: orange;
+}
+
+.box2{
+  background-color: greenyellow;
+}
+
+[name="tiger"]{
+  background-color: cyan;
+  transition:all 1s;
+}
+
+[name="tiger"]:hover{
+  background-color: red;
+  transform: translateX(30px) rotate(360deg)
+}
+
+
+#box:hover{
+  background-color: #901ac3;
+}
+
+
+
+
+
+
+
+
+
