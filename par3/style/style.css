@@ -1,0 +1,25 @@
+
+
+
+.container{
+  background-color: hotpink;
+  /* height: 200px; */
+}
+
+.box01{
+  /* width: 200px;
+  height: 200px; */
+  background-color: dodgerblue;
+}
+
+.box02{
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+}
+
+.another{
+  width: 400px;
+  height: 600px;
+  background-color: black;
+}
