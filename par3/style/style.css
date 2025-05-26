@@ -1,25 +1,78 @@
 
 
-
-.container{
+.list{
   background-color: hotpink;
-  /* height: 200px; */
 }
 
-.box01{
-  /* width: 200px;
-  height: 200px; */
+/* list 안에 있는 li들에게만 */
+/* 한칸 띄어쓰기 : ~안에있는 */
+.list > li{
   background-color: dodgerblue;
 }
 
-.box02{
-  width: 200px;
-  height: 200px;
+/* 함께 가지고있는 */
+
+
+/* list 안에 있는 모든 menu만 */
+li.menu{
+  
+}
+
+/* list안에 있는 친자식 menu에게만 */
+.list > .menu{
   background-color: orange;
 }
 
-.another{
-  width: 400px;
-  height: 600px;
-  background-color: black;
+
+/* .list > li:nth-child(4){ */
+/* .list > li:last-child{ */
+/* .list > li:first-child{ */
+/* .list > li:nth-child(odd){ */
+/* .list > li:nth-child(even){ */
+.list > li:nth-child(2n){
+  background-color: greenyellow;
 }
+
+
+/* CSS nesting */
+
+
+.list{
+
+  & >.box{
+    background-color: black;
+  }
+  
+
+  &:hover{
+
+  }
+
+  > li:nth-child(3){
+
+  }
+
+  > .menu{
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
